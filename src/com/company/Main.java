@@ -3,6 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	
+        boolean verdadeiro = true;
+        boolean falso = false;
+        boolean teste = (verdadeiro ^ !falso);
+        System.out.println(teste);
     }
 }
