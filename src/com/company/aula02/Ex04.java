@@ -50,7 +50,7 @@ public class Ex04 {
             }
         }
         System.out.println("Praia mais distante: " + praiaMaisLonge);
-        System.out.println(praiasIntermediarias + " estão a mais de 10km e a menos de 15km");
+        System.out.println(praiasIntermediarias + " praias estão a mais de 10km e a menos de 15km");
         System.out.printf("Distância média das praias: %.2f", distanciaMedia);
 
         scanner.close();
