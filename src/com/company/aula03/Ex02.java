@@ -1,27 +1,17 @@
 package com.company.aula03;
-//Faça um programa que leia um número inteiro diferente de zero
-// e mostre uma mensagem indicando se este número é positivo ou negativo.
-// Pare a execução do programa quando o usuário requisitar
-// (O programa deve parar quando o usuário escolher 0).
-
-import java.util.Scanner;
+//Elabore um programa que escreve seu nome completo na primeira linha,
+// seu endereço na segunda,
+// e o CEP e telefone na terceira.
 
 public class Ex02 {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-
-        int numero;
-        do{
-            System.out.print("Informe um número: ");
-            numero = scanner.nextInt();
-            if(numero>0){
-                System.out.println("O número informado é positivo.");
-            } else if (numero <0){
-                System.out.println("O número informado é negativo.");
-            }
-
-        }while (numero != 0);
-
+        String nome = "Eric Monné Fraga de Oliveira";
+        String endereco = "Rua da Felicidade, 13";
+        String cep = "20202-222";
+        String telefone = "+55 (21) 999-999-999";
+        System.out.println("Nome: " + nome);
+        System.out.println("Endereço: " + endereco);
+        System.out.println("CEP: " + cep + " | Telefone: " + telefone);
     }
 }

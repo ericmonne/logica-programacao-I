@@ -1,26 +1,28 @@
 package com.company.aula02;
-//Leia 4 (quatro) números
-// calcule o quadrado para cada um (n²)
-// some todos e exiba o resultado
+//Crie um algoritmo que realize a conversão do valor em real para as seguintes moedas:
+//Dólar
+//Euro
+//Libra
 
 import java.util.Scanner;
 
 public class Ex06 {
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Valor em reais: R$");
+        double reais = scanner.nextDouble();
+        System.out.print("Informe a cotação do dólar: ");
+        double cotacaoDolar = scanner.nextDouble();
+        System.out.print("Informe a cotação do euro: ");
+        double cotacaoEuro = scanner.nextDouble();
+        System.out.print("Informe a cotação da libra: ");
+        double cotacaoLibra = scanner.nextDouble();
 
-        double numeros[] = new double[4];
-        double quadrados[] = new double[4];
-        double somaQuadrados = 0;
-        for(int i = 0; i < numeros.length; i++){
-            System.out.printf("Informe o %d° número: ", i+1);
-            numeros[i] = Double.parseDouble(scanner.nextLine());
-            quadrados[i] = Math.pow(numeros[i], 2);
-            somaQuadrados +=quadrados[i];
-        }
-
-        System.out.println("Soma: " + somaQuadrados);
-        scanner.close();
+        double dolares = reais / cotacaoDolar;
+        double euros = reais / cotacaoEuro;
+        double libras = reais / cotacaoLibra;
+        System.out.printf("Valor em dólares: %.2f\n", dolares);
+        System.out.printf("Valor em euros: %.2f\n", euros);
+        System.out.printf("Valor em libras: %.2f", libras);
     }
 }

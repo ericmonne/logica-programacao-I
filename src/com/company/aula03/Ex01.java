@@ -1,8 +1,11 @@
 package com.company.aula03;
-//Escreva um programa que leia quatro notas escolares de um aluno
-// e apresenta uma mensagem informando se o aluno foi aprovado
-// caso apresente o valor da média escolar maior ou igual a 7.
-// Caso contrário, apresente uma mensagem informando que ele está de recuperação.
+//Escreva um programa que seja capaz de receber as seguintes informações
+// e calcular a média da nota de um aluno:
+//Nome
+//Turma
+//Nota 1
+//Nota 2
+//Nota 3
 
 import java.util.Scanner;
 
@@ -10,23 +13,21 @@ public class Ex01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        double notas[] = new double[4];
+        double notas[] = new double[3];
+        System.out.print("Informe o nome: ");
+        String nome = scanner.nextLine();
+        System.out.print("Informe a turma: ");
+        String turma = scanner.nextLine();
+        System.out.print("Informe a primeira nota: ");
+        notas[0] = scanner.nextDouble();
+        System.out.print("Informe a segunda nota: ");
+        notas[1] = scanner.nextDouble();
+        System.out.print("Informe a terceira nota: ");
+        notas[2] = scanner.nextDouble();
 
-        for(int i = 0; i<notas.length; i++){
-            System.out.printf("Informe a %dª nota: ", i+1);
-            notas[i]= Double.parseDouble(scanner.nextLine());
-        }
+        double media = (notas[0] + notas[1] + notas[2])/ notas.length;
 
-        double agregador = 0;
-        for(double nota : notas){
-            agregador+= nota;
-        }
-
-        double media = agregador/ notas.length;
-        if(media>=7){
-            System.out.println("O aluno foi aprovado!");
-        }else {
-            System.out.println("O aluno está de recuperação =(");
-        }
+        System.out.printf("Média do aluno %s da turma %s: %.2f", nome, turma, media);
+        scanner.close();
     }
 }

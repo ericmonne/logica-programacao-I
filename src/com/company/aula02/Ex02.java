@@ -1,17 +1,21 @@
 package com.company.aula02;
-//Elabore um programa que escreve seu nome completo na primeira linha,
-// seu endereço na segunda,
-// e o CEP e telefone na terceira.
+
+//Escreva um programa para determinar a quantidade de cavalos
+// para se levantar uma massa de “m” quilogramas a uma altura de “h” em “t” segundos.
+//Considere cavalos = (m * h / t ) / 745,6999
+
+import java.util.Scanner;
 
 public class Ex02 {
     public static void main(String[] args) {
-
-        String nome = "Eric Monné Fraga de Oliveira";
-        String endereco = "Rua da Felicidade, 13";
-        String cep = "20202-222";
-        String telefone = "+55 (21) 999-999-999";
-        System.out.println("Nome: " + nome);
-        System.out.println("Endereço: " + endereco);
-        System.out.println("CEP: " + cep + " | Telefone: " + telefone);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Informe a massa em kg: ");
+        double massa = scanner.nextDouble();
+        System.out.print("Informe a altura: ");
+        double altura = scanner.nextDouble();
+        System.out.print("Informe o tempo em segundos: ");
+        double segundos = scanner.nextDouble();
+        double cavalos = (massa * altura/ segundos)/745.6999;
+        System.out.printf("São necessários %.2f cavalos para levantar %.2fkg a %.2f metros em %.2f segundos", cavalos, massa, altura, segundos);
     }
 }
