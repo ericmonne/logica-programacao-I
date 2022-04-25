@@ -15,5 +15,7 @@ public class Ex08 {
         double litros = scanner.nextDouble();
         double consumoMedio = litros / distancia;
         System.out.printf("O consumo médio é de %.2f litros por quilômetro.", consumoMedio);
+
+        scanner.close();
     }
 }

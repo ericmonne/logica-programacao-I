@@ -33,5 +33,6 @@ public class Ex05 {
             System.out.printf("Obesidade - IMC = %.2f", IMC);
         }
 
+        scanner.close();
     }
 }

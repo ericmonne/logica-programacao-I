@@ -28,5 +28,6 @@ public class Ex01 {
         System.out.printf("Temperatura em Rankine: %.2f\n", rankine);
         System.out.printf("Temperatura em Réamur: %.2f\n", reamur);
 
+        scanner.close();
     }
 }

@@ -24,5 +24,7 @@ public class Ex09 {
         }
 
         System.out.println(contador + " pessoas possuem 18 anos ou mais");
+
+        scanner.close();
     }
 }

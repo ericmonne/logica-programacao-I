@@ -18,5 +18,7 @@ public class Ex09 {
 
         double media = (nota01 + nota02 + nota03) / 3;
         System.out.printf("Média semestral: %.2f ", media);
+
+        scanner.close();
     }
 }

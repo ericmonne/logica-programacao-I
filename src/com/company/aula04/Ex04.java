@@ -38,5 +38,7 @@ public class Ex04 {
 //        for(int numero : numeros){
 //            System.out.println(numero);
 //        }
+
+        scanner.close();
     }
 }

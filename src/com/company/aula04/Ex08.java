@@ -38,10 +38,12 @@ public class Ex08 {
             agregador += numero;
         }
 
-        double media = agregador/numeros.length;
+        double media = (double)agregador/numeros.length;
 
         System.out.println("Maior: " + maior);
         System.out.println("Menor: " + menor);
         System.out.printf("Media: %.2f", media);
+
+        scanner.close();
     }
 }

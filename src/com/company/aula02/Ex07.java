@@ -11,6 +11,7 @@ public class Ex07 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+
         System.out.print("Informe o primeiro número: ");
         double numero01 = scanner.nextDouble();
         System.out.print("Informe o segundo número: ");
@@ -24,5 +25,7 @@ public class Ex07 {
         System.out.printf("Subtração: %.2f - %.2f = %.2f\n", numero01, numero02, subtracao);
         System.out.printf("Multiplicação: %.2f * %.2f = %.2f\n", numero01, numero02, multiplicacao);
         System.out.printf("Divisão: %.2f / %.2f = %.2f\n", numero01, numero02, divisao);
+
+        scanner.close();
     }
 }

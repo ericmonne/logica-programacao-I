@@ -7,9 +7,12 @@ import java.util.Scanner;
 public class Ex11 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         System.out.print("Informe o valor total da compra: R$");
         double valorTotal = scanner.nextDouble();
         double prestacoes = valorTotal/5;
         System.out.printf("Valor da prestação: R$%.2f", prestacoes);
+
+        scanner.close();
     }
 }

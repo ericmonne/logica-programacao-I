@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class Ex02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         System.out.print("Informe a massa em kg: ");
         double massa = scanner.nextDouble();
         System.out.print("Informe a altura: ");
@@ -17,5 +18,7 @@ public class Ex02 {
         double segundos = scanner.nextDouble();
         double cavalos = (massa * altura/ segundos)/745.6999;
         System.out.printf("São necessários %.2f cavalos para levantar %.2fkg a %.2f metros em %.2f segundos", cavalos, massa, altura, segundos);
+
+        scanner.close();
     }
 }

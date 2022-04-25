@@ -23,5 +23,6 @@ public class Ex02 {
 
         }while (numero != 0);
 
+        scanner.close();
     }
 }

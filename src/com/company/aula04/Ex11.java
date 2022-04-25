@@ -26,5 +26,6 @@ public class Ex11 {
             System.out.println("Os dois números são iguais");
         }
 
+        scanner.close();
     }
 }

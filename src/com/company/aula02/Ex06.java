@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class Ex06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         System.out.print("Valor em reais: R$");
         double reais = scanner.nextDouble();
         System.out.print("Informe a cotação do dólar: ");
@@ -24,5 +25,7 @@ public class Ex06 {
         System.out.printf("Valor em dólares: %.2f\n", dolares);
         System.out.printf("Valor em euros: %.2f\n", euros);
         System.out.printf("Valor em libras: %.2f", libras);
+
+        scanner.close();
     }
 }

@@ -19,5 +19,6 @@ public class Ex07 {
         }while(numero > 0);
         System.out.println("Fatorial: " + fatorial);
 
+        scanner.close();
     }
 }

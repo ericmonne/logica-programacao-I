@@ -33,5 +33,7 @@ public class Ex10 {
         }while (contador < 3);
 
         if (contador ==  3) System.out.println("Que pena, você perdeu");
+
+        scanner.close();
     }
 }

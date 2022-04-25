@@ -13,5 +13,7 @@ public class Ex14 {
         double raio = scanner.nextDouble();
         double area = Math.PI * Math.pow(raio, 2);
         System.out.printf("Área do círculo: %.2f", area);
+
+        scanner.close();
     }
 }

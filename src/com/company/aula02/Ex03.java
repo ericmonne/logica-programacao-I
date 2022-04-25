@@ -24,5 +24,7 @@ public class Ex03 {
         double taxaJuros = 0.02;
         double valorFinal = valorEmprestimo * Math.pow((1+taxaJuros), meses);
         System.out.printf("Valor a ser pago: %.2f", valorFinal);
+
+        scanner.close();
     }
 }

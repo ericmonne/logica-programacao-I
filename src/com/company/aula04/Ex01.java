@@ -28,5 +28,7 @@ public class Ex01 {
         }else {
             System.out.println("O aluno está de recuperação =(");
         }
+
+        scanner.close();
     }
 }

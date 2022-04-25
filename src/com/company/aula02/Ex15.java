@@ -16,5 +16,7 @@ public class Ex15 {
         int ferraduras = cavalos *4;
 
         System.out.println("Quantidade de ferraduras a serem compradas: " + ferraduras);
+
+        scanner.close();
     }
 }

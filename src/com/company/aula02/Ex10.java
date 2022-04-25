@@ -17,5 +17,6 @@ public class Ex10 {
 
         System.out.printf("Valor com rendimento após um mês: R$%.2f", valorComRendimento);
 
+        scanner.close();
     }
 }

@@ -15,5 +15,7 @@ public class Ex04 {
         int diasTotais = idade * 365 + diasBissextos;
 
         System.out.printf("Você já viveu pelo menos %d dias", diasTotais);
+
+        scanner.close();
     }
 }

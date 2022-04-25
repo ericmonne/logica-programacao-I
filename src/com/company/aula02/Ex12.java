@@ -8,6 +8,7 @@ public class Ex12 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+
         System.out.print("Informe o preço de custo: R$");
         double precoCusto = scanner.nextDouble();
         System.out.print("Informe o percentual de acréscimo: ");
@@ -17,6 +18,6 @@ public class Ex12 {
 
         System.out.printf("Valor de venda: R$%.2f", valorVenda);
 
-
+        scanner.close();
     }
 }
