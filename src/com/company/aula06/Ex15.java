@@ -16,16 +16,16 @@ public class Ex15 {
 
         System.out.print("Informe a quantidade de produtos a ser cadastrada: ");
         int quantidadeProdutos = Integer.parseInt(scanner.nextLine());
-        String nomeProduto[] = new String[quantidadeProdutos];
+        String nomeProdutos[] = new String[quantidadeProdutos];
         int quantidadeMercadoria[] = new int[quantidadeProdutos];
         double valoresMercadorias[] = new double[quantidadeProdutos];
 
         for (int i = 0; i < quantidadeProdutos; i++) {
             System.out.printf("Informe o nome do %dº produto: ", i+1);
-            nomeProduto[i] = scanner.nextLine();
-            System.out.printf("Total de %s em estoque: ", nomeProduto[i]);
+            nomeProdutos[i] = scanner.nextLine();
+            System.out.printf("Total de %s em estoque: ", nomeProdutos[i]);
             quantidadeMercadoria[i] = Integer.parseInt(scanner.nextLine());
-            System.out.printf("Valor unitário de %s: ", nomeProduto[i]);
+            System.out.printf("Valor unitário de %s: ", nomeProdutos[i]);
             valoresMercadorias[i] = Double.parseDouble(scanner.nextLine());
         }
 
