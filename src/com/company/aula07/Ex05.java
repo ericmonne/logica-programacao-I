@@ -16,10 +16,10 @@ public class Ex05 {
         String numerosTelefone[] = new String[agenda];
         int idades[] = new int[agenda];
 
-        int acaoContato = 0;
+        int acaoContato;
         int codigo;
 
-        do {
+        while(true) {
             System.out.print("Digite 1 para INSERIR novo contato, 2 para REMOVER um contato ou 3 para SAIR: ");
             acaoContato = Integer.parseInt(scanner.nextLine());
             if (acaoContato == 1) {
@@ -42,9 +42,11 @@ public class Ex05 {
                         break;
                     }
                 }
-
             }
-        }while (acaoContato !=3);
+            if(acaoContato == 3){
+                break;
+            }
+        }
 
         System.out.println("---AGENDA TELEFONICA---");
         for (int i = 0; i < agenda; i++) {

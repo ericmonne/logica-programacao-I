@@ -10,6 +10,22 @@ public class Ex08 {
 
         Scanner scanner = new Scanner(System.in);
 
+        int maisPesadas = 0;
+        int idades = 0;
+        for (int i = 0; i < 7; i++) {
+            System.out.printf("Digite a idade da %dª pessoa: ", i+1);
+            int idade = Integer.parseInt(scanner.nextLine());
+            idades += idade;
+            System.out.printf("Digite o peso da %dª pessoa: ", i+1);
+            double peso = Double.parseDouble(scanner.nextLine());
+            if(peso > 90) {
+                maisPesadas++;
+            }
+        }
+        double mediaIdades = (double)idades/7;
+        System.out.printf("Média de idade: %.2f anos\n", mediaIdades);
+        System.out.printf("Há %d pessoas com mais de 90kg", maisPesadas);
+
         scanner.close();
     }
 }
