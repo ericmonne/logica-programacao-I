@@ -19,7 +19,7 @@ public class Ex05 {
         int acaoContato;
         int codigo;
 
-        while(true) {
+        while (true) {
             System.out.print("Digite 1 para INSERIR novo contato, 2 para REMOVER um contato ou 3 para SAIR: ");
             acaoContato = Integer.parseInt(scanner.nextLine());
             if (acaoContato == 1) {
@@ -30,27 +30,27 @@ public class Ex05 {
                 numerosTelefone[codigo] = scanner.nextLine();
                 System.out.print("Informe a idade: ");
                 idades[codigo] = Integer.parseInt(scanner.nextLine());
-            }
-            if (acaoContato == 2){
+            } else if (acaoContato == 2) {
                 System.out.print("Informe o código: ");
                 codigo = Integer.parseInt(scanner.nextLine());
-                for(int c : codigos) {
-                    if (codigo == c){
+                for (int c : codigos) {
+                    if (codigo == c) {
                         codigos[codigo] = 0;
                         numerosTelefone[codigo] = null;
                         idades[codigo] = 0;
                         break;
                     }
                 }
-            }
-            if(acaoContato == 3){
+            } else if (acaoContato == 3) {
                 break;
+            } else {
+                System.out.println("Opção inválida. Tente novamente");
             }
         }
 
         System.out.println("---AGENDA TELEFONICA---");
         for (int i = 0; i < agenda; i++) {
-            if(codigos[i] != 0) {
+            if (codigos[i] != 0) {
                 System.out.printf("Código: %d - Telefone: %s - Idade: %d\n", codigos[i], numerosTelefone[i], idades[i]);
             }
         }
