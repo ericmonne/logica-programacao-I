@@ -58,12 +58,9 @@ package com.company.aula08;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Random;
 
 public class Ex07 {
     public static void main(String[] args) {
-
-        Random random = new Random();
 
         double[] vetorConsumos = {6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15};
 
@@ -79,7 +76,7 @@ public class Ex07 {
             indexVetor = (int) (Math.random() * vetorConsumos.length);
             consumoCarros.add(vetorConsumos[indexVetor]);
             litrosParaMilKm.add(1000 / vetorConsumos[indexVetor]);
-            custoParaMilKm.add(litrosParaMilKm.get(i) * 7.25);
+            custoParaMilKm.add(litrosParaMilKm.get(i) * PRECO_GASOLINA);
         }
 
         double consumoDoMaisEconomico = 0;
@@ -92,6 +89,7 @@ public class Ex07 {
         indexMaisEconomico = consumoCarros.indexOf(consumoDoMaisEconomico);
         String modeloMaisEconomico = modelosCarros.get(indexMaisEconomico);
 
+        System.out.println("Comparativo de Consumo de Combustivel");
         for (int i = 0; i < quantidadeCarros; i++) {
             System.out.printf("Veículo %d\n", i+1);
             System.out.printf("Nome: %s\n", modelosCarros.get(i));
